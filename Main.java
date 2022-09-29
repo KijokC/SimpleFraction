@@ -1,6 +1,8 @@
-public class main{
+public class Main{
     public static void main(String[] args)
     {
-        System.out.println("Test")
+        Fraction F = new Fraction();
+
+        System.out.println(F.toString());
     }
 }
