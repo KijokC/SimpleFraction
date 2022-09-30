@@ -41,4 +41,22 @@ public class Fraction {
         this.denominateur = this.denominateur * F.denominateur;
         return this;
     }
+    
+    public String equalsTo(Fraction F)
+    {
+        String output = "";
+        if(this.getValeur() == F.getValeur()) output = "Egals";
+        else output = "Non égals";
+        return output;
+
+    }
+
+    public String compareTo(Fraction F)
+    {
+        String output = "";
+        if(this.getValeur() < F.getValeur()) output = "Inférieur";
+        else if(this.getValeur() > F.getValeur()) output = "Supérieur";
+        else output = "Egaux";
+        return output;
+    }
 }
